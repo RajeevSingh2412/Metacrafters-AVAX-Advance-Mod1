@@ -127,7 +127,7 @@ contract Vault {
          return userLevel[_user];         
     }
 
-        function getUserDinosaurs(address _user) external view returns (string[] memory) {
+    function getUserDinosaurs(address _user) external view returns (string[] memory) {
         uint[] memory dinoIds = userDinosaurs[_user];
         string[] memory dinoNames = new string[](dinoIds.length);
 
